@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theta Sleep</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="background-gradient"></div>
+
+    <div class="stars">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+        <filter id="filter">
+          <feTurbulence baseFrequency="0" />
+          <feColorMatrix
+            values="0 0 0 9 -4
+                    0 0 0 9 -4
+                    0 0 0 9 -4
+                    0 0 0 0 1"
+          />
+        </filter>
+        <rect width="100%" height="100%" filter="url(#filter)" />
+      </svg>
+    </div>
+
+    <div class="shadow">
+      <div class="shadow-texture"></div>
+    </div>
+
+    <div class="content fade-in">
+      <img class="logo-hero" src="theta-white.png" />
+      <h3 class="blurb">Bringing sleep medicine home.</h3>
+      <br />
+      <h3 class="blurb">
+        A digital sleep clinic for diagnosis and treatment of sleep disorders at
+        home – delivering better, faster and cheaper care.
+      </h3>
+      <br /><br />
+      <button class="primary-button">Get In Touch</button>
+    </div>
+
+    <script>
+      const turbulence = document.querySelector(".stars feTurbulence");
+
+      function setRandomStarFrequency() {
+        const newFrequency = (Math.random() * 0.3 + 0.1).toFixed(2);
+        turbulence.setAttribute("baseFrequency", newFrequency);
+      }
+
+      window.addEventListener("DOMContentLoaded", setRandomStarFrequency);
+    </script>
+
+    <script>
+      function applyRandomShadowSvg() {
+        const shadowTexture = document.querySelector(".shadow-texture");
+        const shadowTextureCount = 6;
+        const randomIndex = Math.floor(Math.random() * shadowTextureCount);
+        shadowTexture.style.backgroundImage = `url(texture-shadow-${
+          randomIndex + 1
+        }.svg)`;
+      }
+
+      window.addEventListener("DOMContentLoaded", applyRandomShadowSvg);
+    </script>
+
+    <script>
+      function applyRandomGradient() {
+        const backgroundGradient = document.querySelector(
+          ".background-gradient"
+        );
+        const gradients = [
+          "dawn-background",
+          "sunrise-background",
+          "morning-background",
+          "afternoon-background",
+          "sunset-background",
+          "dusk-background",
+          "night-background",
+        ];
+        const randomIndex = Math.floor(Math.random() * gradients.length);
+        const selectedGradient = gradients[randomIndex];
+
+        backgroundGradient.classList.remove(...gradients);
+        backgroundGradient.classList.add(selectedGradient);
+      }
+
+      window.addEventListener("DOMContentLoaded", applyRandomGradient);
+    </script>
+  </body>
+</html>
