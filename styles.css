@@ -97,9 +97,9 @@ body {
   margin-top: -5%;
   aspect-ratio: 4 / 3;
   background-size: cover;
-  filter: blur(10px);
+  filter: blur(8px);
   opacity: 0.2;
-  animation: flicker 20s ease-in-out infinite;
+  /* animation: flicker 20s ease-in-out infinite; */
 }
 
 .content {
@@ -223,7 +223,7 @@ body {
   .logo-hero {
     width: 70%;
   }
-  .shadow {
-    filter: blur(20px);
+  .shadow-texture {
+    filter: blur(16px);
   }
 }
