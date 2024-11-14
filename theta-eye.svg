@@ -1,8 +1,0 @@
-<svg width="172" height="83" viewBox="0 0 172 83" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path class="smile" d="M33.314 7.55902C33.314 7.55902 44.5921 41.393 85.3187 41.393C126.045 41.393 137.323 7.55902 137.323 7.55902" stroke="black" stroke-width="14.24" stroke-linecap="round" stroke-linejoin="round"/>
-  <line class="vertical" x1="85.5481" y1="48.513" x2="85.5481" y2="75.6257" stroke="black" stroke-width="14.24" stroke-linecap="round"/>
-  <line class="tilted-line1" x1="7.12" y1="-7.12" x2="37.9922" y2="-7.12" transform="matrix(0.642791 0.766041 -0.766048 0.642784 107.257 36.3805)" stroke="black" stroke-width="14.24" stroke-linecap="round"/>
-  <line class="tilted-line2" x1="7.12" y1="-7.12" x2="37.9923" y2="-7.12" transform="matrix(0.766048 0.642784 -0.642791 0.766041 131.059 10.0652)" stroke="black" stroke-width="14.24" stroke-linecap="round"/>
-  <line class="tilted-line3" x1="7.12" y1="-7.12" x2="37.9923" y2="-7.12" transform="matrix(-0.766048 0.642784 0.642791 0.766041 41.5582 8.81201)" stroke="black" stroke-width="14.24" stroke-linecap="round"/>
-  <line class="tilted-line4" x1="7.12" y1="-7.12" x2="37.9922" y2="-7.12" transform="matrix(0.642791 -0.766041 0.766048 0.642784 38.3281 70.9385)" stroke="black" stroke-width="14.24" stroke-linecap="round"/>
-</svg>

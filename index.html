@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <script async src="https://tally.so/widgets/embed.js"></script>
   </head>
   <body>
     <div class="background-gradient"></div>
@@ -37,15 +38,40 @@
     </div>
 
     <div class="content fade-in">
-      <img class="logo-hero" src="theta-white.png" />
-      <h3 class="blurb">Bringing sleep medicine home.</h3>
-      <br />
-      <h3 class="blurb">
+      <img class="logo-hero" src="theta-sleep-logo.svg" />
+      <h3 class="title">Bringing sleep medicine home.</h3>
+      <h3 class="subtitle">
         A digital sleep clinic for diagnosis and treatment of sleep disorders at
         home – delivering better, faster and cheaper care.
       </h3>
-      <br /><br />
-      <button class="primary-button">Get In Touch</button>
+      <button
+        class="primary-button"
+        data-tally-open="wQx7X7"
+        data-tally-layout="modal"
+        data-tally-width="500"
+        data-tally-hide-title="1"
+        data-tally-overlay="1"
+        data-tally-auto-close="0"
+      >
+        Get in touch
+        <svg
+          class="right-arrow"
+          fill="inherit"
+          stroke="inherit"
+          stroke-width="20"
+          height="50px"
+          width="50px"
+          viewBox="0 0 330 330"
+        >
+          <path
+            id="XMLID_222_"
+            d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001
+            c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213
+            C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606
+            C255,161.018,253.42,157.202,250.606,154.389z"
+          />
+        </svg>
+      </button>
     </div>
 
     <script>
@@ -77,6 +103,7 @@
         const backgroundGradient = document.querySelector(
           ".background-gradient"
         );
+        const logoImage = document.querySelector(".logo-hero");
         const gradients = [
           "dawn-background",
           "sunrise-background",
@@ -100,6 +127,21 @@
 
         backgroundGradient.classList.remove(...gradients);
         backgroundGradient.classList.add(selectedGradient);
+
+        if (
+          selectedGradient === "dusk-background" ||
+          selectedGradient === "night-background"
+        ) {
+          document.documentElement.style.setProperty(
+            "--main-text-color",
+            "#ffffff"
+          );
+          document.documentElement.style.setProperty(
+            "--inverse-text-color",
+            "#27272a"
+          );
+          logoImage.src = "theta-sleep-logo-light.svg";
+        }
       }
 
       window.addEventListener("DOMContentLoaded", applyRandomGradient);
