@@ -10,10 +10,6 @@
   --inverse-text-color: #ffffff;
 }
 
-.sc-bdb96318-2.iajskr {
-  display: none;
-}
-
 html {
   font-size: 12px;
 }
@@ -21,20 +17,27 @@ html {
 body {
   line-height: 1.2;
   color: var(--main-text-color);
-  overflow: hidden;
+  overflow: hidden !important;
   width: 100vw;
   height: 100vh;
 }
 
-.background-gradient {
+.background-container {
   position: absolute;
-  top: 0;
+  overflow: hidden;
   left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.background-gradient {
   width: 100vw;
   height: 100vh;
   background: #fff;
   animation: bg-animation-vertical 8s ease infinite;
 }
+
 .dawn-background {
   background: #e0cdbe;
   background: linear-gradient(35deg, hsl(30, 34%, 96%), hsl(27, 41%, 79%) 80%);
@@ -168,10 +171,6 @@ body {
 .fade-in {
   opacity: 0;
   animation: fadeIn 0.5s ease-in forwards;
-}
-
-.iajskr {
-  display: none;
 }
 
 @keyframes bg-animation-horizontal {
