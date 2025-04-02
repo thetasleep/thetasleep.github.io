@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'Recoleta';
-  src: url('Recoleta-Medium.otf') format('opentype');
+  font-family: "Recoleta";
+  src: url("Recoleta-Medium.otf") format("opentype");
   font-weight: 500;
 }
 @font-face {
-  font-family: 'Poppins';
-  src: url('Poppins-Regular.otf') format('truetype');
+  font-family: "Poppins";
+  src: url("Poppins-Regular.otf") format("truetype");
   font-weight: 400;
 }
 @font-face {
-  font-family: 'Poppins';
-  src: url('Poppins-SemiBold.ttf') format('truetype');
+  font-family: "Poppins";
+  src: url("Poppins-SemiBold.ttf") format("truetype");
   font-weight: 600;
 }
 
@@ -35,14 +35,14 @@ html {
   color: var(--main-text-color);
   overflow: hidden !important;
   width: 100vw;
-  min-height: 100vh;
-  background:  #fafafa;
+  min-height: 100svh;
+  background: #fafafa;
 }
 
 body {
   line-height: 1.2;
   color: #27272a;
-  background:  #fafafa;
+  background: #fafafa;
 }
 
 .background-container {
@@ -56,7 +56,7 @@ body {
 
 .background-gradient {
   width: 100vw;
-  height: 100vh;
+  height: 100svh;
   background: #fff;
   animation: bg-animation-vertical 8s ease infinite;
 }
@@ -64,7 +64,7 @@ body {
 .banner {
   position: relative;
   width: 100%;
-  background: #ECECE8;
+  background: #ecece8;
 }
 
 .dawn-background {
@@ -150,7 +150,7 @@ body {
   padding-top: 12vh;
   width: 84%;
   max-width: 820px;
-  min-height: calc(100vh - 96px);
+  min-height: calc(100svh - 86px);
 }
 
 .logo-hero {
@@ -222,14 +222,14 @@ body {
 }
 
 .terms-header {
-  font-family: 'Recoleta', Georgia, 'Times New Roman', serif;
+  font-family: "Recoleta", Georgia, "Times New Roman", serif;
   font-weight: 500;
   font-size: 4rem;
   color: var(--main-text-color);
 }
 
 .terms-main h2 {
-  font-family: 'Recoleta', Georgia, 'Times New Roman', serif;
+  font-family: "Recoleta", Georgia, "Times New Roman", serif;
   font-weight: 500;
   font-size: 2rem;
   margin-top: 2rem;
@@ -250,7 +250,8 @@ body {
   font-weight: 600;
 }
 
-.terms-main ul, ol {
+.terms-main ul,
+ol {
   padding-left: 2rem;
   margin-bottom: 1rem;
 }
@@ -261,7 +262,7 @@ body {
 }
 
 .footer {
-  background: #ECECE8;
+  background: #ecece8;
 }
 
 .logo-footer {
@@ -290,14 +291,14 @@ body {
 .terms-table-header-top {
   margin: -1rem -1rem 1rem -1rem;
   padding: 2rem 1rem 1rem 1rem;
-  background-color: #ECECE8;
+  background-color: #ecece8;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .terms-table-header {
   margin: 2rem -1rem 1rem -1rem;
   padding: 2rem 1rem 1rem 1rem;
-  background-color: #ECECE8;
+  background-color: #ecece8;
 }
 
 .terms-link {
