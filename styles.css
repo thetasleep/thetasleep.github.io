@@ -302,19 +302,6 @@ ol.terms-list ol ol ol li {
   margin-left: 1.5rem;
 }
 
-ol.terms-list-alpha {
-  list-style: lower-alpha inside;
-  counter-reset: none;
-}
-
-ol.terms-list-alpha li::before {
-  content: none !important;
-}
-
-ol.terms-list-alpha li {
-  display: list-item;
-}
-
 .footer {
   background: #ecece8;
 }
