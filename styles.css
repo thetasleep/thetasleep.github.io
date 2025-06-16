@@ -250,8 +250,7 @@ body {
   font-weight: 600;
 }
 
-.terms-main ul,
-ol {
+.terms-main ul {
   padding-left: 2rem;
   margin-bottom: 1rem;
 }
@@ -259,6 +258,48 @@ ol {
 .terms-main li {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+ol.terms-list {
+  counter-reset: item;
+  list-style: none;
+}
+
+ol.terms-list li {
+  display: block;
+  counter-increment: item;
+}
+
+ol.terms-list > li {
+  font-family: "Recoleta", Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+ol.terms-list > li::before {
+  content: counters(item, ".") ". ";
+}
+
+ol.terms-list ol li::before {
+  content: counters(item, ".") " ";
+}
+
+ol.terms-list ol {
+  counter-reset: item;
+}
+
+ol.terms-list ol li {
+  margin-bottom: 1rem;
+}
+
+ol.terms-list ol ol li {
+  margin-left: 0.75rem;
+}
+
+ol.terms-list ol ol ol li {
+  margin-left: 1.5rem;
 }
 
 .footer {
